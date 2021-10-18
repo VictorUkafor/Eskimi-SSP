@@ -13,15 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return redirect()->route('login');
-});
 
 Route::group(["namespace"=>"App\Http\Controllers"], function() {
     
+    Route::get('/', function () { return redirect()->route('login'); });   
     Auth::routes();
 
-    Route::get('/home', 'HomeController@index')->name('home');
+    Route::middleware(['auth'])->group(function () {
+        Route::get('/home', 'HomeController@index')->name('home');
+        
+    });
 
 });
 
