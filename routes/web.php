@@ -21,7 +21,13 @@ Route::group(["namespace"=>"App\Http\Controllers"], function() {
 
     Route::middleware(['auth'])->group(function () {
         Route::get('/home', 'HomeController@index')->name('home');
-        
+
+        Route::post('/campaigns', 'CampaignController@create');
+        Route::get('/campaigns', 'CampaignController@get');
+        Route::put('/campaigns/{uid}', 'CampaignController@update');
+        Route::get('/get-media', 'CampaignController@getMedia');
+
+
     });
 
 });

@@ -20,8 +20,8 @@ class CreateAdvertisingCampaignsTable extends Migration
             $table->string('name');
             $table->float('daily_budget');
             $table->float('total_budget');
-            $table->timestamp('date_from');
-            $table->timestamp('date_to');
+            $table->date('date_from');
+            $table->date('date_to');
             $table->longtext('creative_upload');
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users');
