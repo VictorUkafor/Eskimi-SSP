@@ -39,6 +39,6 @@ To build the application run ``npm run production`` in the root of the applicati
 To view the application, go to your browser and type ``http://app-name``
 
 
-### Loadind Seeders
+### Loading Seeders
 
 To load seeders, cd into the root of the app and run ``php artisan db:seed``
