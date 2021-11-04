@@ -18,16 +18,26 @@ Supply the parameters to your database to the .env file
 
 3. ``npm install`` to install npm packages
 
-6. cd into the laradock folder of the application and run ``docker-compose up -d nginx mysql`` to install docker dependencies
 
-5. cd into the root of the application and  run ``php artisan migrate`` database migration
+### Setting up Docker
+
+cd into the laradock folder of the application and 
+
+1. copy and rename the .env.example file .env
+
+2. Supply the neccessary environment variable
+
+3. run ``docker-compose up -d nginx mysql`` to install docker dependencies
 
 
 ### Running the Application
 
+cd into the root of the application and  run ``php artisan migrate`` database migration
+
 To build the application run ``npm run production`` in the root of the application
 
 To view the application, go to your browser and type ``http://app-name``
+
 
 ### Loadind Seeders
 
