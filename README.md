@@ -27,7 +27,7 @@ Supply the parameters to your database to the .env file
 
 To build the application run ``npm run production`` in the root of the application
 
-To view the application, go to your browser and type ``http://eskimi``
+To view the application, go to your browser and type ``http://app-name``
 
 ### Loadind Seeders
 
