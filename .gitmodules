@@ -1,3 +1,6 @@
 [submodule "laradock-eskimi"]
 	path = laradock-eskimi
 	url = https://github.com/Laradock/laradock.git
+[submodule "laradock"]
+	path = laradock
+	url = https://github.com/Laradock/laradock.git
